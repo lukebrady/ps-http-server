@@ -203,11 +203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/new-httpserver.csproj",
+      "projectUniqueName": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/ps-http-server/new-httpserver.csproj",
       "projectName": "new-httpserver",
-      "projectPath": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/new-httpserver.csproj",
+      "projectPath": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/ps-http-server/new-httpserver.csproj",
       "packagesPath": "/Users/ltbrady/.nuget/packages/",
-      "outputPath": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/obj/",
+      "outputPath": "/Users/ltbrady/Desktop/Software/dotnet/new-httpserver/ps-http-server/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

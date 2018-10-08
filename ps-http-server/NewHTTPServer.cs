@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Management.Automation;
 
 namespace new_httpserver
 {
     [Cmdlet(VerbsCommon.New, "HTTPServer")]
-    public class PSHTTPServer : Cmdlet //Extending Class1 from Cmdlet Class
+    public class NewHTTPServer : Cmdlet //Extending Class1 from Cmdlet Class
     {
         // Port parameter.
         [Parameter(
@@ -38,14 +39,15 @@ namespace new_httpserver
             } else {
                 url = URI + ":" + "8080/";
             }
+            //Add ending output codes
+            httpServer.Prefixes.Add(url);
+            httpServer.Start();
+            Console.WriteLine("Starting the HTTP Server on {0}.", url);
         }
 
         protected override void EndProcessing() //Add this End function method
         {
-            //Add ending output codes
-            httpServer.Prefixes.Add(url);
-            httpServer.Start();
-            Console.WriteLine("Starting the PS HTTP Server.");
+            httpServer.Close();
         }
     }
 }
